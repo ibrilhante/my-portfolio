@@ -1,0 +1,46 @@
+.window-frame {
+    flex: 1;
+    border: 4px solid var(--bg-raised);
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 30px rgba(107, 191, 181, 0.08);
+    min-height: 0;
+    min-width: 0
+}
+
+.window-pane {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.window-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.rain-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.window-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(192, 132, 200, 0.04) 0%,
+    transparent 40%,
+    rgba(107, 191, 181, 0.04) 100%
+  );
+  pointer-events: none;
+}

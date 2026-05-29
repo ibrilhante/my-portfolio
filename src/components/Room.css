@@ -1,0 +1,49 @@
+.room {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px 24px;
+    gap: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.room-top {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+    min-height: 0;
+}
+
+.room-bottom {
+    display: flex;
+    gap: 16px;
+    height: 220px;
+}
+
+.fairy-lights {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.bulb {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #FFD95A;
+    margin-top: 14px;
+    animation: flicker 3s ease-in-out infinite;
+}
+
+@keyframes flicker {
+    0%, 90%, 100% { opacity: 1; }
+    95% { opacity: 0.3; }
+}
